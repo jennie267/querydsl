@@ -13,7 +13,8 @@ import javax.persistence.EntityManager;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-@Transactional
+@Transactional  // Transactional을 넣으면 테스트 후 롤백
+//@Commit   얘를 넣으면 롤백안됨
 class QuerydslApplicationTests {
 
     // @PersistenceContext 원래는 이건데 @Autowird 붙여도됨 (스프링이 알아서해줌)
