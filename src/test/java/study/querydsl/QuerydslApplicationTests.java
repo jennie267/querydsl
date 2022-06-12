@@ -17,8 +17,8 @@ import static org.assertj.core.api.Assertions.*;
 @Transactional
 class QuerydslApplicationTests {
 
-    @Autowired
     // @PersistenceContext 원래는 이건데 @Autowird 붙여도됨 (스프링이 알아서해줌)
+    @Autowired
     EntityManager em;
 
     @Test
